@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <?php
   $BDProductos = array( 
-    array(1, 2, 3, 4, 5),                                       //El ID
-    array("Blusa", "Lentes", "Playera", "Pantalón", "Vestido"), //La Descripción
-    array(100, 350, 200, 420, 250),                             //El Precio
-    array("Dama", "Caballero", "Caballero", "Dama", "Dama"));   //Categoría
-  $iProductos = 5; //Indica el No. de Productos
+    array(1, 2, 3, 4, 5, 6, 7),                                       //El ID
+    array("Blusa", "Lentes", "Playera", "Pantalón", "Vestido", "P", "S"), //La Descripción
+    array(100, 350, 200, 420, 250, 343, 291),                             //El Precio
+    array("Dama", "Caballero", "Caballero", "Dama", "Dama", "Dama", "Caballero"));   //Categoría
+  $iProductos = 7; //Indica el No. de Productos
 
   $BDAlmacen = array( 
-    array(1, 2, 3, 4, 5), //El IDProducto
-    array(0,10, 5,15, 3)); //Las Existencias
+    array(1, 2, 3, 4, 5, 6, 7), //El IDProducto
+    array(0,10, 5,15, 3, 8, 12)); //Las Existencias
 
   $iAlmacen = 2; //El No. de existencias
   $BDVentas = array(
@@ -168,6 +168,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title"><a href="#">Damas</a></h4>
 									<h4 class="panel-title"><a href="#">Caballeros</a></h4>
+									<h4 class="panel-title"><a href="#">Niños</a></h4>
 								</div>
 							</div>
 						</div><!--/category-products-->
@@ -197,14 +198,14 @@
 												<?php echo"$ " . $BDProductos[2][$i];
 												?>
 											<h2>
-											<p><?php echo "$ " . $BDProductos[1][$i];
+											<p><?php echo $BDProductos[1][$i];
 									        ?>
 											<p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2><?php echo $BDProductos[2][$i];?></h2>
+												<h2><?php echo "$ " . $BDProductos[2][$i];?></h2>
 												<p><?php echo  $BDProductos [1][$i];?></p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
 											</div>
@@ -242,6 +243,32 @@
 												<div class="productinfo text-center">
 													<img src="images/home/recommend1.jpg" alt="" />
 													<h2>$100</h2>
+													<p>Producto Esp 1</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/home/recommend1.jpg" alt="" />
+													<h2>$320</h2>
+													<p>Producto Esp 1</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="images/home/recommend1.jpg" alt="" />
+													<h2>$430</h2>
 													<p>Producto Esp 1</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
 												</div>
