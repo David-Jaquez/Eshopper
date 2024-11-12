@@ -14,8 +14,8 @@
   }
 
   $BDAlmacen = array( 
-    array(1, 2, 3, 4, 5, 6, 7), //El IDProducto
-    array(0,10, 5,15, 3, 8, 12)); //Las Existencias
+    array(1, 2, 3, 4, 5), //El IDProducto
+    array(0,10, 5,15, 3)); //Las Existencias
 
   $iAlmacen = 2; //El No. de existencias
   $BDVentas = array(
@@ -76,8 +76,7 @@
 						<div class="logo pull-left">
 							<a href="index.php"><img src="images/home/logo.png" alt="" /></a>
 						</div>						
-					</div>
-					<H3>SOFTWARE PUNTO DE VENTA</H3>
+					</div>___
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
@@ -193,7 +192,7 @@
 						<h2 class="title text-center">Catálogo de Productos</h2>
 						<?php
 						$n=4;
-                        for ($i=0; $i< $iProductos;$i++){      
+                        for ($i=1; $i< $iProductos;$i++){      
                         ?>
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
@@ -202,7 +201,7 @@
 											<?php
 											$img = $BDProductos[$n];
 											?>
-											<img src="images/home/<?php echo$img;?>.jpg" width="210" height="180" alt=""/> 
+											<img src="images/home/<?php echo$img;?>.jpg" alt="" width="210" height="180" /> 
 											<h2>
 												<?php echo $BDProductos[$n+2];
 												?>
