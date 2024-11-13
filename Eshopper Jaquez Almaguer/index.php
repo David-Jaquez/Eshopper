@@ -203,7 +203,7 @@
 											?>
 											<img src="images/home/<?php echo$img;?>.jpg" alt="" width="210" height="180" /> 
 											<h2>
-												<?php echo $BDProductos[$n+2];
+												<?php echo "$" .  $BDProductos[$n+2];
 												?>
 											<h2>
 											<p><?php echo $BDProductos[$n+1];
@@ -214,7 +214,7 @@
 										<div class="product-overlay">
 											<div class="overlay-content">
 												<h2><?php echo $BDProductos[$n+1];?></h2>
-												<p><?php echo $BDProductos [$n+2];?></p>
+												<p><?php echo"$" .$BDProductos [$n+2];?></p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
 											</div>
 										</div>
